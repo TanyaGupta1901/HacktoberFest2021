@@ -1,12 +1,12 @@
 public class isPrime(){
-public static boolean isPrime(int number){
-  int cont = 2;
-  boolean prime=true;
-  while ((prime) && (cont!=number)){
-    if (number % cont == 0)
-      prime = false;
-    cont++;
+public static boolean isPrime(int number)
+{
+  
+  for(int i=2;i<number;i++)
+  {
+    if(number%i==0)
+      return false;
   }
-  return prime;
+  return true;
 }
 }
